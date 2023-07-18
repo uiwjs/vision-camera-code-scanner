@@ -2,11 +2,9 @@
   "name": "@uiw/vision-camera-code-scanner",
   "version": "0.0.1",
   "description": "VisionCamera Frame Processor Plugin to read barcodes using MLKit Vision Barcode Scanning",
-  "main": "lib/commonjs/index.js",
-  "module": "lib/module/index.js",
-  "types": "lib/typescript/src/index.d.ts",
+  "main": "src/index.ts",
   "react-native": "src/index.ts",
-  "source": "src/index.ts",
+  "types": "src/index.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -26,7 +24,6 @@
   ],
   "scripts": {
     "test": "jest",
-    "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
@@ -39,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/rodgomesc/vision-camera-code-scanner",
+  "repository": "https://github.com/@uiw/vision-camera-code-scanner",
   "author": "Rodrigo gomes <rodgomesc@gmail.com> (https://github.com/rodgomesc)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rodgomesc/vision-camera-code-scanner/issues"
+    "url": "https://github.com/@uiw/vision-camera-code-scanner/issues"
   },
-  "homepage": "https://github.com/rodgomesc/vision-camera-code-scanner#readme",
+  "homepage": "https://github.com/@uiw/vision-camera-code-scanner#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
     "@react-native-community/eslint-config": "^3.2.0",
@@ -66,8 +63,8 @@
     "react": "^18.2.0",
     "react-native": "^0.71.7",
     "react-native-builder-bob": "^0.20.4",
-    "react-native-vision-camera": "https://github.com/mrousavy/react-native-vision-camera#820db3ca9e646a611b54f55c402ea9cbf022b7f3",
-    "react-native-worklets": "https://github.com/chrfalch/react-native-worklets#10abdf160ec0373e51138ed409ce021464c2c6fe",
+    "react-native-vision-camera": "3.0.0-rc.3",
+    "react-native-worklets": "https://github.com/chrfalch/react-native-worklets#3ac2fbb",
     "release-it": "^15.6.0",
     "typescript": "^4.9.5"
   },
@@ -82,18 +79,6 @@
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": false
-    },
-    "github": {
-      "release": false
-    }
   },
   "eslintConfig": {
     "root": true,
@@ -133,9 +118,5 @@
       "module",
       "typescript"
     ]
-  },
-  "packageManager": "yarn@3.5.0",
-  "resolutions": {
-    "react-native-vision-camera": "patch:react-native-vision-camera@https%3A//github.com/mrousavy/react-native-vision-camera.git%23commit=820db3ca9e646a611b54f55c402ea9cbf022b7f3#./.yarn/patches/react-native-vision-camera-https-167742576d.patch"
   }
 }

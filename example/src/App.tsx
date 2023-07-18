@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { StyleSheet, Text } from 'react-native';
 import { Camera, useCameraDevices } from 'react-native-vision-camera';
-import { BarcodeFormat, useScanBarcodes } from 'vision-camera-code-scanner';
+import { BarcodeFormat, useScanBarcodes } from '@uiw/vision-camera-code-scanner';
 
 export default function App() {
   const [hasPermission, setHasPermission] = React.useState(false);
