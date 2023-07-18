@@ -7,6 +7,9 @@
   "types": "lib/typescript/src/index.d.ts",
   "react-native": "src/index.ts",
   "source": "src/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "src",
     "lib",
@@ -43,9 +46,6 @@
     "url": "https://github.com/rodgomesc/vision-camera-code-scanner/issues"
   },
   "homepage": "https://github.com/rodgomesc/vision-camera-code-scanner#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
     "@react-native-community/eslint-config": "^3.2.0",
